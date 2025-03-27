@@ -97,9 +97,10 @@ const FeaturedPrice = () => {
                   )}
                 </div>
                 
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                  <h3 className="text-white font-medium">{item.name}</h3>
-                  <p className="text-white/80 text-sm">{item.category}</p>
+                {/* Updated gradient overlay for better text visibility */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent py-6 px-4">
+                  <h3 className="text-white font-medium text-lg">{item.name}</h3>
+                  <p className="text-white/90 text-sm">{item.category}</p>
                 </div>
               </div>
               

@@ -79,7 +79,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Price tags */}
+              {/* Price tags - Fixed positioning to prevent text cutoff */}
               <div className="absolute top-8 -right-6 glass px-4 py-3 rounded-xl shadow-lg animate-fade-up" style={{ animationDelay: '0.8s' }}>
                 <div className="text-sm font-medium text-gray-600">Ribeye Steak</div>
                 <div className="text-lg font-bold text-meat-700">$12.99<span className="text-sm text-gray-500">/lb</span></div>

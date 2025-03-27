@@ -14,9 +14,10 @@ const Index = () => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A') {
         const href = target.getAttribute('href');
-        if (href && href.startsWith('#')) {
+        if (href && href.startsWith('#') && href.length > 1) {
           e.preventDefault();
-          const targetElement = document.querySelector(href);
+          const targetId = href.substring(1); // Remove the # character
+          const targetElement = document.getElementById(targetId);
           if (targetElement) {
             window.scrollTo({
               top: targetElement.getBoundingClientRect().top + window.scrollY - 80,
